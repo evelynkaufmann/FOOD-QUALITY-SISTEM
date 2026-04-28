@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --branco-background: #f8f9fa;
+    --azul-sistema: #0C57BE;
+    --verde-borda: #049953;
+    --verde-fundo: #E1F3EA;
+    --azul-fundo: #DDECFE;
+    --laranja-borda: #F4921E;
+    --laranja-fundo: #FEF0D8;
+    --lilas-borda: #7A54EC;
+    --lilas-fundo: #E5E2FE;
+    --branco-texto: #ffffff;
+    --branco-boxes: #ffffff;
+    --cinza-background: #f0f0f5;
+    --fonte-titulos: 'Poppins', sans-serif;
+    --fonte-textos: 'Inter', sans-serif;
+    --cinza-texto: #75757c;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--branco-background);
+}
+
+header ul{
+    background-color: var(--azul-sistema);
+    color: var(--branco-texto);
+    font-family: var(--fonte-titulos);
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 5px 20px;
+
+}
+
+.logo_empresa {
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+.food_quality__sistem{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nome_empresa{
+    margin-left: auto;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.sino, .user {
+    font-size: 18px;
+    padding: 0 5px;
+    }
+
+.menu_topo {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-family: var(--fonte-textos);
+    font-size: 18px;
+    align-items: center;
+    background-color: var(--azul-sistema);
+    height: 40px;
+    padding: 0 20px;
+}
+
+.menu_topo ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+}
+
+.menu_topo li{
+    height: 100%;
+}
+
+.menu_topo .item{
+    text-decoration: none;
+    color: var(--branco-texto);
+    padding: 20 20px;  
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    transition: 0.2s;
+    gap: 10px
+}
+
+.menu_topo .item:hover{
+    color: var(--azul-sistema);
+    background-color: var(--branco-boxes);
+    margin: 10 20 20 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--azul-sistema);
+    color: var(--branco-texto);
+    font-family: var(--fonte-textos);
+    padding: 30px 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
