@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.css' rel='stylesheet'>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js'></script>
+    <title>PÁGINA INICIAL</title>
+</head>
+
+
+
+<body>
+    <header>
+        <ul>
+            <li class="logo-empresa"> <i class="bi bi-clipboard2-check-fill"></i></li>
+            <li class="food-quality-sistem"> FOOD QUALITY SISTEM</li>
+            <li class="nome-empresa"> NOME DA EMPRESA</li>
+            <li class="sino"> <i class="bi bi-bell-fill"></i></li>
+            <li class="user"><i class="bi bi-person-circle"></i></li>
+        </ul>
+    </header>
+
+
+    <nav class="menu-topo">
+        <ul>
+            <li>
+                <a href="home.html "class="item">
+                    <i class="bi bi-house-fill"></i>
+                    <span>INÍCIO</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <span>DASHBOARDS</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="/html/reclamacoes.html" class="item">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+                    <span>RECLAMAÇÕES</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>INSPEÇÕES</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <span>NÃO CONFORMIDADES</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <section class="inicio">
+        <div class="boas-vindas">
+            <h1>Olá, Usuário!</h1>
+            <p>Bem-vindo ao Food Quality Sistem!</p>
+        </div>
+
+        <div class="calendario">
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+
+    <main>
+        <section class="dashboards">
+            <div class="bloco">
+                <div class="bloco-icone bloco-icone-inspecoes">
+                    <i class="bi bi-clipboard2-check-fill"></i>
+                </div>
+                <div class="bloco-info-inspecoes">
+                    <p>Inspeções Hoje</p>
+                    <h2>12</h2>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="bloco-icone bloco-icone-reclamacoes">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+                </div>
+                <div class="bloco-info-reclamacoes">
+                    <p>Reclamações Abertas</p>
+                    <h2>3</h2>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="bloco-icone bloco-icone-nao-conformidades">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <div class="bloco-info-nao-conformidades">
+                    <p>Não conformidades</p>
+                    <h2>5</h2>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="bloco-icone bloco-icone-check-lists">
+                    <i class="bi bi-clipboard2-check-fill"></i>
+                </div>
+                <div class="bloco-info-check-lists">
+                    <p>Check Lists Pendentes</p>
+                    <h2>7</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <section>
+            <div class="atividades">
+                <h3>
+                    Atividades recentes
+                </h3>
+            </div>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Check List</th>
+                            <th>Data de Realização</th>
+                            <th>Horário de Realização</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Check list de Inspeção das linhas de produção</td>
+                            <td>14/04/2026</td>
+                            <td>07:00</td>
+                        </tr>
+                        <tr>
+                            <td>Resposta ao cliente - ocorrência 021</td>
+                            <td>14/04/2026</td>
+                            <td>14:16</td>
+                        </tr>
+
+                        <tr>
+                            <td>Check list de temperatura das salas</td>
+                            <td>14/04/2026</td>
+                            <td>15:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Check list de BPF's</td>
+                            <td>14/04/2026</td>
+                            <td>17:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+    </section>
+    <footer>
+        <p>© 2026 Food Quality System</p>
+        <p>Controle de Qualidade - Indústria de Alimentos</p>
+        <p>Versão 1.0</p>
+    </footer>
+
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

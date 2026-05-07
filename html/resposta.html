@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nova-reclamacao-resposta.css">
+    <title>RESPOSTA RECLAMAÇÃO</title>
+</head>
+
+
+<body>
+    <header>
+        <ul>
+            <li class="logo-empresa"> <i class="bi bi-clipboard2-check-fill"></i></li>
+            <li class="food-quality-sistem"> FOOD QUALITY SISTEM</li>
+            <li class="nome-empresa"> NOME DA EMPRESA</li>
+            <li class="sino"> <i class="bi bi-bell-fill"></i></li>
+            <li class="user"><i class="bi bi-person-circle"></i></li>
+        </ul>
+    </header>
+
+    <nav class="menu-topo">
+        <ul>
+            <li>
+                <a href="home.html "class="item">
+                    <i class="bi bi-house-fill"></i>
+                    <span>INÍCIO</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <span>DASHBOARDS</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="/html/reclamacoes.html" class="item">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+                    <span>RECLAMAÇÕES</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>INSPEÇÕES</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="home.html" class="item">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <span>NÃO CONFORMIDADES</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<!--Início da página de nova reclamação-->
+
+    <section class="voltar-reclamacoes">
+        <div>
+            <a href="reclamacoes.html" class="voltar">
+                <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
+        </div>   
+
+        <div class="modulo-reclamacoes">
+            <i class="bi bi-chat-square-fill"></i>
+            <h1> Módulo de Reclamações de Clientes</h1>
+        </div>
+    </section>
+
+<!--Dados da reclamação que foi aberta para consulta-->
+
+    <section class="consulta">
+        <h3>DADOS DA ABERTURA DA RECLAMAÇÃO</h3>
+        <div class="consulta-dados">
+            <p>Departamento da reclamação:</p>
+            <input id="departamento" type="text" readonly>
+
+            <p>Motivo da reclamação:</p>
+            <input id="motivo" type="text" readonly>
+
+            <p>Produto reclamado:</p>
+            <input id="produto" type="text" readonly>
+            <p>Lote:</p>
+            <input id="lote" type="text" readonly>
+            <p>Quantidade reclamada em Kg</p>
+            <input id="quantidade" type="text" readonly>
+            <p>Adicionar imagens do produto reclamado:</p>
+            <img id="imagem-preview" style="max-width: 200px;">
+        </div>
+    </section>
+
+
+<!--Dados da resposta-->
+
+        <section class="resposta">
+            <form id="responder-reclamacao">
+                <h3>RESPONDER RECLAMAÇÃO</h3>
+
+                <div class="formulario-resposta">
+                    <p>Resposta da área técnica:</p>
+                    <textarea id="resposta-texto"></textarea>
+
+                    <p>Status da reclamação:</p>
+                    <div class="status-opcoes">
+                        <label>
+                            <input type="radio" name="status" value="PROCEDENTE"> Procedente
+                        </label>
+
+                        <label>
+                            <input type="radio" name="status" value="NÃO PROCEDENTE"> Não procedente
+                        </label>
+                    </div>
+
+                        <p>Responsável pela resposta:</p>
+                    <input id="responsavel" type="text">
+                </div>
+                <div class="botoes-form">
+                    <button class="salvar" type="submit">SALVAR</button>
+                    <button class="apagar" type="reset">APAGAR</button>
+                </div>
+            </form>
+        </section>
+
+
+    <footer>
+        <p>© 2026 Food Quality System</p>
+        <p>Controle de Qualidade - Indústria de Alimentos</p>
+        <p>Versão 1.0</p>
+    </footer>
+</body>
+
+<script src="../js/resposta.js"></script>
+
+</html>
